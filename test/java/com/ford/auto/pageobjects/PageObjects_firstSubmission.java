@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 //#	Creation Date 		: 24/11/2019
 //#	Created By 			: KPAVANK7
 //#	Title	 			: First Submission Screen
@@ -6,6 +7,9 @@
 //#	Description			: This page object contains WebElement methods related to First Submission
 
 package com.ford.auto.pageobjects;
+=======
+package com.ford.auto.PageObjectClasses;
+>>>>>>> 7f9664f045f357dbc1250fa3eb03a81fd59274c6
 
 import java.util.List;
 
@@ -207,7 +211,10 @@ public class PageObjects_firstSubmission  {
 		return element;	
 	}
 //	Page Objects post claim submission
+<<<<<<< HEAD
 	
+=======
+>>>>>>> 7f9664f045f357dbc1250fa3eb03a81fd59274c6
 	public static WebElement txt_clmSubConf(WebDriver driver)
 	{
 		element = driver.findElement(By.xpath("txtclmSubConf_xpath"));
@@ -219,4 +226,22 @@ public class PageObjects_firstSubmission  {
 		return element;	
 	}
 	
+<<<<<<< HEAD
+=======
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+>>>>>>> 7f9664f045f357dbc1250fa3eb03a81fd59274c6
 }
