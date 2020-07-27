@@ -4,15 +4,13 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
-
-
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 //import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.Test;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 
 
@@ -23,7 +21,7 @@ public class ObjectRepositoryExample1 {
 	private FileInputStream fis;
 	private File propertyFile;
 
-	@Before
+	@BeforeMethod
 	public void setUp() throws Exception {
 		
 		System.setProperty("webdriver.ie.driver",System.getProperty("user.dir")+"\\Utilities\\IEDriverServer.exe");
@@ -64,7 +62,7 @@ public class ObjectRepositoryExample1 {
 			
 		}
 
-	@After
+	@AfterMethod
 	public void tearDown() throws Exception {
 		driver.quit();
 	}

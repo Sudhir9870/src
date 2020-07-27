@@ -1,16 +1,12 @@
-//#	Creation Date 		: 24/07/2020
-//#	Created By 			: ASUDHIR
-//#	Title	 			: First Submission Screen
-//#	Last Updated on 	: 24/07/2020	
-//#	Last Updated by 	: Sudhir Aryasomayajula 				
-//#	Description			: This page object contains WebElement methods related to First Submission
-
 package com.ford.auto.pageobjects;
+
 import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
+
 
 public class PageObjects_firstSubmission  {
 	
@@ -26,7 +22,7 @@ public class PageObjects_firstSubmission  {
 		return element;	
 	}
 
-//  Page Objects for 'Claim Entry Information' section	
+// Page Objects for 'Claim Entry Information' section	
 	public static WebElement vinNo_fs(WebDriver driver)
 	{
 		element = driver.findElement(By.xpath("vinNo_xpath"));
@@ -170,6 +166,7 @@ public class PageObjects_firstSubmission  {
 	}
 	
 //	Page Objects for buttons in first Submission page
+
 	public static WebElement btn_nxtRepair_fs(WebDriver driver)
 	{
 		element = driver.findElement(By.cssSelector("btnnxtRepair_cssSelector"));
@@ -179,7 +176,8 @@ public class PageObjects_firstSubmission  {
 	{
 		element = driver.findElement(By.cssSelector("btnvwSubTotals_cssSelector"));
 		return element;	
-	}public static WebElement btn_Submit_fs(WebDriver driver)
+	}
+	public static WebElement btn_Submit_fs(WebDriver driver)
 	{
 		element = driver.findElement(By.cssSelector("btnSubmit_cssSelector"));
 		return element;	
@@ -194,7 +192,7 @@ public class PageObjects_firstSubmission  {
 		element = driver.findElement(By.cssSelector("btnPreval_cssSelector"));
 		return element;	
 	}
-	
+
 //	Page Objects post claim submission
 	public static WebElement txt_clmSubConf(WebDriver driver)
 	{
@@ -206,4 +204,5 @@ public class PageObjects_firstSubmission  {
 		element = driver.findElement(By.cssSelector("lnkchkClmStatus_cssSelector"));
 		return element;	
 	}
+	
 }
