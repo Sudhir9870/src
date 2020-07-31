@@ -42,7 +42,7 @@ public class ObjectRepositoryExample1 {
 		Properties pro=new Properties();
 		pro.load(fis);
 		
-		driver.get(appURL);
+//		driver.get(appURL);
 		driver.findElement(By.xpath("//*[contains(text(),'Active Directory')]")).click();
 		Thread.sleep(8000);
 		driver.findElement(By.xpath(pro.getProperty("Thailand_xpath"))).click();
