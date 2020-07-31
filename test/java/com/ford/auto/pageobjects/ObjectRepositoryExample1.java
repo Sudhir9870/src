@@ -38,7 +38,7 @@ public class ObjectRepositoryExample1 {
 		
 		System.out.println(System.getProperty("user.dir"));
 		propertyFile=new File(System.getProperty("user.dir")+"\\src\\test\\resources\\SERVIS2_objectrepository\\CountrySelection.properties");
-		fis=new FileInputStream(propertyFile);
+//		fis=new FileInputStream(propertyFile);
 		Properties pro=new Properties();
 		pro.load(fis);
 		
