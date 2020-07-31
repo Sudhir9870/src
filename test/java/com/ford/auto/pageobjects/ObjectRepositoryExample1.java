@@ -46,7 +46,7 @@ public class ObjectRepositoryExample1 {
 //		Reader.getCellData(arg0, arg1, arg2)
 		driver.get(appURL);
 		driver.findElement(By.xpath("//*[contains(text(),'Active Directory')]")).click();
-		Thread.sleep(8000);
+//		Thread.sleep(8000);
 		driver.findElement(By.xpath(pro.getProperty("Thailand_xpath"))).click();
 		Thread.sleep(8000);
 		
